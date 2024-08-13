@@ -1,0 +1,140 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #1a1a1d, #4e4e50);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #ffdd59;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #444;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ffdd59;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffdd59;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa502;
+}
+
+.hidden {
+    display: none;
+}
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#storyContent {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#choices {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#choices button {
+    margin-top: 10px;
+    background-color: #ffa502;
+    width: auto;
+    padding: 10px 20px;
+    transition: transform 0.2s ease;
+}
+
+#choices button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Club Logos */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
